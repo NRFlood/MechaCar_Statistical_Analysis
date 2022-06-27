@@ -1,17 +1,39 @@
 # MechaCar Statistical Analysis - Car Analysis using R
 
 ## Deliverable 1: Linear Regression to Predict MPG
-INSERT IMAGE HERE
+
+![](https://github.com/NRFlood/MechaCar_Statistical_Analysis/blob/main/Deliverable%201.PNG)
+
 Looking at the MechaCar dataset, the two variables that provided a non-random amount of variance to mpg appear to be both ground clearance and vehicle length based on their respective p-values falling well below the significance level of 0.05. There is also strong possibility that the vehicle weight may have provided some non-random variance to the mpg values, but we cannot conclude that it is significant since it falls just outside the significance level of 0.05 with a p-value of 0.0776. Running the linear regression model, we can conclude that the slope of the line is not equal to zero because the p-value of the hypothesis test was equal to 5.35e-11, which is much smaller than the 0.05 significance level. The R-squared value 0.7149 indicates that the regression model does a decent job of predicting the mpg of MechaCar prototypes approximately 71% of the time. Other factors such as engine size and horsepower for each MechaCar prototype may have proven to be more impactful variables, however they were not captured in the dataset.
 
 ## Deliverable 2: Summary Statistics on Suspension Coils 
-INSERT IMAGE HERE
+
+![](https://github.com/NRFlood/MechaCar_Statistical_Analysis/blob/main/Deliverable%202a.PNG)
+
 When looking at the combined data across all of the lots we can see that the variance of 62.29356 is in fact less than the maximum acceptable variance of 100 pounds per square inch. 
-INSERT IMAGE HERE
+
+![](https://github.com/NRFlood/MechaCar_Statistical_Analysis/blob/main/Deliverable%202b.PNG)
+
 However, looking at the lots individually only Lot 1 and Lot 2 are within design specifications, showing virtually the same mean and median (of 1500) and variances well below the acceptable limit of 100 pounds per square inch.  Lot 3 on the other hand has more variability than the other lots, showing a variance of 170.286, which exceeds the manufacturing specs mentioned above. 
 
 ## Deliverable 3: T-Tests on Suspension Coils
-INSERT IMAGE HERE
+
+**ALL LOTS**
+
+![](https://github.com/NRFlood/MechaCar_Statistical_Analysis/blob/main/Deliverable%203%20(all%20lots).PNG)
+
+**LOT 1**
+
+![](https://github.com/NRFlood/MechaCar_Statistical_Analysis/blob/main/Deliverable%203%20(Lot%201).PNG)
+
+**LOT 2**
+
+![](https://github.com/NRFlood/MechaCar_Statistical_Analysis/blob/main/Deliverable%203%20(Lot%202).PNG)
+
+**LOT 3**
+
+![](https://github.com/NRFlood/MechaCar_Statistical_Analysis/blob/main/Deliverable%203%20(Lot%203).PNG)
+
 Looking at the t-tests for Lot 1 and Lot 2 we can see that the PSI values are not statistically different from the population mean based on their p-values being above the significance level of 0.05. However, the p-value of Lot 3 is below the significance of 0.05 at 0.041 indicating that the mean suspension coil PSI at this lot is statistically different from the population mean.
 
 ## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
